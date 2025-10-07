@@ -99,4 +99,34 @@ document.addEventListener('DOMContentLoaded', () => {
   setLang('de');
 
   // Language buttons
-  document.getElementById('lang-de').addEventListener('click', () =>
+  document.getElementById('lang-de').addEventListener('click', () => setLang('de'));
+  document.getElementById('lang-en').addEventListener('click', () => setLang('en'));
+  document.getElementById('lang-fr').addEventListener('click', () => setLang('fr'));
+
+  // Smooth scroll for internal links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  // Footer year
+  const footerYear = document.getElementById('current-year');
+  if(footerYear) footerYear.textContent = new Date().getFullYear();
+
+  // Simple fade-in on scroll
+  const faders = document.querySelectorAll('.fade-in');
+  const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add('appear');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => appearOnScroll.observe(fader));
+});
+
