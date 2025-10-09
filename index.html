@@ -1,121 +1,125 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Un Thé au Bout du Monde - Surfcamp</title>
-  <meta name="description" content="Découvrez notre surfcamp inspirant à Mirleft, Maroc. Personnalisez votre séjour avec notre formulaire intégré et bénéficiez d'une remise immédiate. Profitez de cours de surf exceptionnels, d'hébergements confortables, et d'excursions mémorables.">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="hero_title">Surf & Sahara — Ocean. Sand. Stars.</title>
+  <meta name="description" content="Authentisches Surf-Camp in Mirleft. Wähle 7 Tage Surf oder 10 Tage Surf + Sahara.">
+  <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Google Tag Manager -->
-  <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TGFFW3F8');
-  </script>
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGFFW3F8" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  <!-- End Google Tag Manager -->
-
   <!-- Header -->
   <header>
-    <a href="#">
-      <img src="images/Surfcamp maroc Un thé au bout du monde logo-N8N.png" alt="Logo Un Thé au Bout du Monde">
-    </a>
+    <a href="#"><img src="images/Surfcamp maroc Un thé au bout du monde logo-N8N.png" alt="Logo" /></a>
     <nav>
       <ul>
-        <li><a href="#hero">Accueil</a></li>
-        <li><a href="#sejour">Séjour</a></li>
-        <li><a href="#activites">Activités</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#offers" data-i18n="nav_offers">Angebote</a></li>
+        <li><a href="#info" data-i18n="nav_info">Ablauf</a></li>
+        <li><a href="#gallery" data-i18n="nav_gallery">Galerie</a></li>
+        <li><a href="#reserve" data-i18n="nav_book">Reservieren</a></li>
       </ul>
     </nav>
+
+    <!-- Language Switch -->
+    <div class="lang-switch">
+      <button id="lang-de" class="active">DE</button>
+      <button id="lang-en">EN</button>
+      <button id="lang-fr">FR</button>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <h1>Un Thé au Bout du Monde - Surfcamp</h1>
-    <p>Transformez votre séjour à Mirleft avec des expériences inoubliables de surf, de détente et de nature. Personnalisez votre séjour et obtenez un devis instantané.</p>
-    <a href="#formulaire" class="btn-primary">Créer mon séjour</a>
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <h1 data-i18n="hero_title">Surf & Sahara — Ocean. Sand. Stars.</h1>
+    <p data-i18n="hero_sub">Authentisches Surf-Camp in Mirleft. Wähle 7 Tage Surf oder 10 Tage Surf + Sahara.</p>
+    <a href="#offers" class="btn-primary" data-i18n="hero_cta">Angebote ansehen</a>
+    <p class="hero-trust" data-i18n="hero_trust">Kleine Gruppen • Zertifizierte Lehrkräfte • Nachhaltig</p>
   </section>
 
-  <!-- Séjour Section -->
-  <section id="sejour">
-    <h2>Découvrez notre univers</h2>
-    <div class="content">
-      <div class="columns-images">
-        <div class="col">
-          <img src="images/surfcamp-surf-maroc-mirleft-BodyN8N.jpg" alt="Cours de Surf">
-          <h3>Cours de Surf</h3>
-          <p>Apprenez à surfer avec des professionnels dans des spots exceptionnels.</p>
-        </div>
-        <div class="col">
-          <img src="images/surf-mirleft-maroc-Body-N8N.jpg" alt="Excursions Nature">
-          <h3>Excursions Nature</h3>
-          <p>Explorez des paysages magnifiques et participez à des aventures inoubliables.</p>
-        </div>
-        <div class="col">
-          <img src="images/chambre-couple-un-the-au-bout-du-monde-surfcamp-mirleft-maroc-Body-N8N.jpg" alt="Hébergement Confortable">
-          <h3>Hébergement Confortable</h3>
-          <p>Profitez d’un confort unique et de la beauté naturelle environnante.</p>
-        </div>
+  <!-- Offers -->
+  <section id="offers">
+    <h2 data-i18n="offers_title">Unsere Formeln — Wähle deine Reise</h2>
+    <div class="columns-images">
+      <div class="col fade-in">
+        <h3 data-i18n="pkg1_title">7 Tage – Surf Camp</h3>
+        <p data-i18n="pkg1_sub">Perfekt für Anfänger & Fortgeschrittene</p>
+        <ul>
+          <li data-i18n="pkg1_f1">6 Tage Surf-Sessions (Morgens & Nachmittags)</li>
+          <li data-i18n="pkg1_f2">Zertifizierte Surflehrer, max. 8 Personen/Lehrer</li>
+          <li data-i18n="pkg1_f3">Unterkunft in Zimmern mit Meerblick</li>
+          <li data-i18n="pkg1_f4">Authentische marokkanische Vollpension</li>
+          <li data-i18n="pkg1_f5">Yoga am Strand & Pool</li>
+        </ul>
+        <p data-i18n="pkg_price">Preis auf Anfrage</p>
+        <a href="#reserve" class="btn-primary" data-i18n="pkg1_cta">Mehr erfahren & reservieren</a>
+      </div>
+
+      <div class="col fade-in">
+        <h3 data-i18n="pkg2_title">10 Tage – Surf & Sahara</h3>
+        <p data-i18n="pkg2_sub">Surf & magische Wüste</p>
+        <ul>
+          <li data-i18n="pkg2_f1">8 Tage Surf in Mirleft</li>
+          <li data-i18n="pkg2_f2">2 Tage Wüsten-Trip: Dromedarexkursion & Bivouac</li>
+          <li data-i18n="pkg2_f3">Geführte Dünen-Tour & lokale Kultur</li>
+          <li data-i18n="pkg2_f4">Alle Transfers & Verpflegung inklusive</li>
+          <li data-i18n="pkg2_f5">Kleine Gruppen • Nachhaltig</li>
+        </ul>
+        <p data-i18n="pkg_price">Preis auf Anfrage</p>
+        <a href="#reserve" class="btn-primary" data-i18n="pkg2_cta">Mehr erfahren & reservieren</a>
       </div>
     </div>
   </section>
 
-  <!-- CTA Section -->
-  <section class="cta">
-    <h3>Profitez de 20% de réduction sur votre séjour</h3>
-    <p>Réservez dès maintenant et vivez une expérience de surf authentique au Maroc.</p>
-    <button onclick="document.querySelector('#formulaire').scrollIntoView({ behavior: 'smooth' });">
-      Personnaliser mon séjour
-    </button>
-  </section>
+  <!-- Info -->
+  <section id="info">
+    <h2 data-i18n="info_title">Ablauf & Leistungen</h2>
+    <div class="content fade-in">
+      <h3 data-i18n="act_surf">Surfen</h3>
+      <p data-i18n="act_surf_p">Individuelle Sessions & Videofeedback</p>
 
-  <!-- Form Section -->
-  <section id="formulaire" class="form-section">
-    <h2>Créer votre séjour idéal</h2>
-    <div>
-      <iframe
-        data-tally-src="https://tally.so/embed/mV2b1E?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-        loading="lazy"
-        width="100%"
-        height="500"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        title="Créer votre séjour idéal">
-      </iframe>
-      <script>
-        var d=document,w="https://tally.so/widgets/embed.js",v=function(){
-          "undefined"!=typeof Tally?Tally.loadEmbeds():
-          d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(e=>{
-            e.src=e.dataset.tallySrc
-          });
-        };
-        if(d.querySelector(`script[src="${w}"]`))v();
-        else{var s=d.createElement("script");s.src=w;s.onload=v;s.async=!0;
-        d.body.appendChild(s);}
-      </script>
+      <h3 data-i18n="act_yoga">Yoga</h3>
+      <p data-i18n="act_yoga_p">Sunset Yoga & Mobility</p>
+
+      <h3 data-i18n="act_food">Kulinarik</h3>
+      <p data-i18n="act_food_p">Regionale Küche, frisch & saisonal</p>
+
+      <h3 data-i18n="act_desert">Desert Trip</h3>
+      <p data-i18n="act_desert_p">Kamelritt & Nacht unter Sternen</p>
     </div>
   </section>
 
+  <!-- Gallery -->
+  <section id="gallery" class="fade-in">
+    <h2 data-i18n="gallery_title">Galerie</h2>
+    <div class="columns-images">
+      <div class="col"><img src="images/surf1.jpg" alt="Surf Session"></div>
+      <div class="col"><img src="images/desert.jpg" alt="Sahara Trip"></div>
+      <div class="col"><img src="images/yoga.jpg" alt="Yoga Sunset"></div>
+    </div>
+  </section>
+
+  <!-- Reserve / Booking -->
+  <section id="reserve" class="form-section fade-in">
+    <h2 data-i18n="reserve_title">Reservierung & Anfrage</h2>
+    <p data-i18n="reserve_sub">Fülle das kurze Formular aus und wir melden uns innerhalb von 48 Stunden.</p>
+    <iframe
+      data-tally-src="https://tally.so/embed/mV2b1E?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+      loading="lazy"
+      width="100%"
+      height="500"
+      frameborder="0"
+      title="Formular"></iframe>
+  </section>
+
   <!-- Footer -->
-  <footer id="contact">
-    <p>Contactez-nous :
-      <a href="mailto:contact@surfcamp-un-the-au-bout-du-monde.com">contact@surfcamp-un-the-au-bout-du-monde.com</a> |
-      Tél : +212 699112501
-    </p>
-    <p>Suivez-nous sur <strong>Instagram</strong> et <strong>TikTok</strong> pour rester inspiré et connecté 🌴</p>
+  <footer>
+    <p data-i18n="reserve_contact">Fragen? Mail:</p>
+    <a href="mailto:contact@surfcamp-un-the-au-bout-du-monde.com">contact@surfcamp-un-the-au-bout-du-monde.com</a>
+    <p>&copy; <span id="current-year"></span> Surf & Sahara — Mirleft</p>
   </footer>
 
   <script src="js/main.js"></script>
 </body>
 </html>
-
