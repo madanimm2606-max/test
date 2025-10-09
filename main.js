@@ -1,3 +1,4 @@
+console.log("i18n system loaded ✅");
 // --- i18n Übersetzungen ---
 const translations = {
   de: {
